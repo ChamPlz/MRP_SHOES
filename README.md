@@ -7,7 +7,6 @@ Este projeto é um Sistema de Gestão baseado em Java para MRP Shoes, desenvolvi
 - **Gestão de Produtos**: Adicionar, atualizar e excluir produtos do inventário.
 - **Gestão de Pedidos**: Gerenciar pedidos de clientes, incluindo adicionar novos pedidos, atualizar o status do pedido e visualizar o histórico de pedidos.
 - **Relatórios**: Gerar relatórios sobre o status do inventário, vendas e outras métricas relevantes.
-- **Autenticação de Usuário**: Sistema de login seguro para garantir que apenas usuários autorizados possam acessar o sistema.
 - **Funções de Usuário**: Diferentes níveis de acesso com base em funções de usuário, como administrador, gerente e funcionário.
 
 ## Instalação
