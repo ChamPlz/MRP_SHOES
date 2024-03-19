@@ -1,26 +1,25 @@
 # Sistema de Gestão MRP Shoes (Projeto Universitário)
 
 ## Visão Geral
-Este projeto é um Sistema de Gestão baseado em Java para MRP Shoes, desenvolvido como parte de um projeto universitário. Utiliza o padrão DAO (Data Access Object) para facilitar o acesso aos dados do banco de dados, proporcionando uma arquitetura mais organizada e modular. O sistema foi projetado para facilitar a gestão de inventário, vendas e informações de clientes, fornecendo funcionalidades como adicionar, atualizar e excluir produtos, gerenciar pedidos de clientes e gerar relatórios para análise.
+Este projeto é um Sistema de Gestão baseado em Java - MRP Shoes, desenvolvido como parte de um projeto universitário. Ele utiliza o padrão de projeto DAO (Data Access Object) para separar a lógica de negócios da camada de acesso a dados, e faz uso do MySQL como banco de dados para armazenar informações. O sistema é projetado para facilitar a gestão de inventário, vendas e informações de clientes, fornecendo funcionalidades para adicionar, atualizar e excluir produtos, gerenciar pedidos de clientes e gerar relatórios para análise.
 
 ## Funcionalidades
 - **Gestão de Produtos**: Adicionar, atualizar e excluir produtos do inventário.
 - **Gestão de Pedidos**: Gerenciar pedidos de clientes, incluindo adicionar novos pedidos, atualizar o status do pedido e visualizar o histórico de pedidos.
 - **Relatórios**: Gerar relatórios sobre o status do inventário, vendas e outras métricas relevantes.
-
-## Padrão de Desenvolvimento DAO
-O projeto segue o padrão DAO (Data Access Object) para separar a lógica de negócios da camada de acesso a dados. Isso permite uma melhor organização do código e facilita a manutenção e extensibilidade do sistema. As classes DAO são responsáveis por fornecer métodos para acessar e manipular os dados no banco de dados, enquanto as classes de negócios se concentram na lógica específica do domínio.
-
+- 
 ## Instalação
 1. Clone o repositório:
     ```
-    git clone https://github.com/champlz/MRP_SHOES.git
+    git clone https://github.com/victorfaccioli/MRP_SHOES.git
     ```
-2. Navegue até o diretório do projeto:
+2. Configure o MySQL e importe o banco de dados fornecido no diretório `database`.
+3. Certifique-se de que o driver JDBC do MySQL está incluído no projeto.
+4. Navegue até o diretório do projeto:
     ```
     cd MRP_SHOES
     ```
-3. Compile os arquivos Java:
+5. Compile os arquivos Java:
     ```
     javac *.java
     ```
