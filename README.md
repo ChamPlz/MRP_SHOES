@@ -14,7 +14,7 @@ O projeto segue o padrão DAO (Data Access Object) para separar a lógica de neg
 ## Instalação
 1. Clone o repositório:
     ```
-    git clone https://github.com/victorfaccioli/MRP_SHOES.git
+    git clone https://github.com/champlz/MRP_SHOES.git
     ```
 2. Navegue até o diretório do projeto:
     ```
