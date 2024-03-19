@@ -1,4 +1,4 @@
-# Sistema de Gestão MRP para MRP Shoes (Projeto Universitário)
+# Sistema de Gestão MRP Shoes (Projeto Universitário)
 
 ## Visão Geral
 Este projeto é um Sistema de Gestão baseado em Java para MRP Shoes, desenvolvido como parte de um projeto universitário. Utiliza o padrão DAO (Data Access Object) para facilitar o acesso aos dados do banco de dados, proporcionando uma arquitetura mais organizada e modular. O sistema foi projetado para facilitar a gestão de inventário, vendas e informações de clientes, fornecendo funcionalidades como adicionar, atualizar e excluir produtos, gerenciar pedidos de clientes e gerar relatórios para análise.
