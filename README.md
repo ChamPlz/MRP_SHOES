@@ -1,17 +1,20 @@
 # Sistema de Gestão MRP para MRP Shoes (Projeto Universitário)
 
 ## Visão Geral
-Este projeto é um Sistema de Gestão baseado em Java para MRP Shoes, desenvolvido como parte de um projeto universitário, projetado para facilitar a gestão de inventário, vendas e informações de clientes. Ele fornece funcionalidades para adicionar, atualizar e excluir produtos, gerenciar pedidos de clientes e gerar relatórios para análise.
+Este projeto é um Sistema de Gestão baseado em Java para MRP Shoes, desenvolvido como parte de um projeto universitário. Utiliza o padrão DAO (Data Access Object) para facilitar o acesso aos dados do banco de dados, proporcionando uma arquitetura mais organizada e modular. O sistema foi projetado para facilitar a gestão de inventário, vendas e informações de clientes, fornecendo funcionalidades como adicionar, atualizar e excluir produtos, gerenciar pedidos de clientes e gerar relatórios para análise.
 
 ## Funcionalidades
 - **Gestão de Produtos**: Adicionar, atualizar e excluir produtos do inventário.
 - **Gestão de Pedidos**: Gerenciar pedidos de clientes, incluindo adicionar novos pedidos, atualizar o status do pedido e visualizar o histórico de pedidos.
 - **Relatórios**: Gerar relatórios sobre o status do inventário, vendas e outras métricas relevantes.
 
+## Padrão de Desenvolvimento DAO
+O projeto segue o padrão DAO (Data Access Object) para separar a lógica de negócios da camada de acesso a dados. Isso permite uma melhor organização do código e facilita a manutenção e extensibilidade do sistema. As classes DAO são responsáveis por fornecer métodos para acessar e manipular os dados no banco de dados, enquanto as classes de negócios se concentram na lógica específica do domínio.
+
 ## Instalação
 1. Clone o repositório:
     ```
-    git clone https://github.com/champlz/MRP_SHOES.git
+    git clone https://github.com/victorfaccioli/MRP_SHOES.git
     ```
 2. Navegue até o diretório do projeto:
     ```
