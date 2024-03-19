@@ -38,5 +38,3 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE).
 ## Reconhecimentos
 Agradecimentos especiais a [Victor Faccioli](https://github.com/victorfaccioli) por criar a base deste projeto.
 
-## Contato
-Para quaisquer dúvidas ou suporte, sinta-se à vontade para entrar em contato com o mantenedor do projeto em [example@email.com](mailto:example@email.com).
