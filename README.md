@@ -11,27 +11,31 @@ Este projeto é um **Sistema de Gestão MRP Shoes**, desenvolvido como parte de 
 
 ## Estrutura do Projeto
 ```
-MRP_SHOES
+MRP_SHOES-main
 │── database/            # Scripts SQL para criação do banco de dados
+│   ├── mrpshoes_materiais.sql
+│   ├── mrpshoes_ordens.sql
+│   ├── mrpshoes_produto.sql
 │── mrp_shoes/
+│   ├── pom.xml          # Configuração do Maven
 │   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/org/example/
-│   │   │   │   ├── Main.java          # Classe principal
-│   │   │   │   ├── DAO/               # Classes de acesso a dados
-│   │   │   │   ├── models/            # Classes de modelo
-│   │   │   │   ├── services/          # Regras de negócio
-│   │   │   ├── resources/
-│   ├── pom.xml            # Configuração do Maven
-│── README.md              # Documentação do projeto
-│── LICENSE                # Licença do projeto
+│   │   ├── main/java/org/example/
+│   │   │   ├── Main.java
+│   │   │   ├── DAO/
+│   │   │   │   ├── MaterialDao.java
+│   │   │   │   ├── ProdutoDAO.java
+│   │   │   ├── configuration/
+│   │   │   │   ├── Conexao.java
+│   ├── target/          # Diretório de build
+│── LICENSE
+│── README.md
 ```
 
 ## Configuração e Instalação
 1. **Clonar o repositório**
    ```sh
    git clone https://github.com/seu-usuario/MRP_SHOES.git
-   cd MRP_SHOES
+   cd MRP_SHOES-main
    ```
 
 2. **Configurar o banco de dados**
@@ -39,7 +43,7 @@ MRP_SHOES
    - Importar os arquivos SQL na pasta `database/`
 
 3. **Configurar o projeto**
-   - Verificar a conexão com o banco de dados no arquivo `DAO`
+   - Verificar a conexão com o banco de dados no arquivo `configuration/Conexao.java`
 
 4. **Compilar e executar**
    ```sh
