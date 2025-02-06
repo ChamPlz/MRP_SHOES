@@ -1,41 +1,61 @@
 # Sistema de Gestão MRP Shoes (Projeto Universitário)
 
 ## Visão Geral
-Este projeto é um Sistema de Gestão baseado em Java - MRP Shoes, desenvolvido como parte de um projeto universitário. Ele utiliza o padrão de projeto DAO (Data Access Object) para separar a lógica de negócios da camada de acesso a dados, e faz uso do MySQL como banco de dados para armazenar informações. O sistema é projetado para facilitar a gestão de inventário, vendas e informações de clientes, fornecendo funcionalidades para adicionar, atualizar e excluir produtos, gerenciar pedidos de clientes e gerar relatórios para análise.
+Este projeto é um **Sistema de Gestão MRP Shoes**, desenvolvido como parte de um projeto universitário. Ele utiliza **Java** com o padrão **DAO (Data Access Object)** para separação da lógica de negócios e da camada de acesso a dados. O sistema usa **MySQL** como banco de dados e é projetado para facilitar a **gestão de inventário, vendas e informações de clientes**.
+
+## Tecnologias Utilizadas
+- **Java 11+**
+- **Maven** para gerenciamento de dependências
+- **MySQL** para persistência de dados
+- **Padrão DAO** para separação de responsabilidades
+
+## Estrutura do Projeto
+```
+MRP_SHOES
+│── database/            # Scripts SQL para criação do banco de dados
+│── mrp_shoes/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/org/example/
+│   │   │   │   ├── Main.java          # Classe principal
+│   │   │   │   ├── DAO/               # Classes de acesso a dados
+│   │   │   │   ├── models/            # Classes de modelo
+│   │   │   │   ├── services/          # Regras de negócio
+│   │   │   ├── resources/
+│   ├── pom.xml            # Configuração do Maven
+│── README.md              # Documentação do projeto
+│── LICENSE                # Licença do projeto
+```
+
+## Configuração e Instalação
+1. **Clonar o repositório**
+   ```sh
+   git clone https://github.com/seu-usuario/MRP_SHOES.git
+   cd MRP_SHOES
+   ```
+
+2. **Configurar o banco de dados**
+   - Criar um banco de dados no MySQL
+   - Importar os arquivos SQL na pasta `database/`
+
+3. **Configurar o projeto**
+   - Verificar a conexão com o banco de dados no arquivo `DAO`
+
+4. **Compilar e executar**
+   ```sh
+   mvn clean install
+   mvn exec:java -Dexec.mainClass="org.example.Main"
+   ```
 
 ## Funcionalidades
-- **Gestão de Produtos**: Adicionar, atualizar e excluir produtos do inventário.
-- **Gestão de Pedidos**: Gerenciar pedidos de clientes, incluindo adicionar novos pedidos, atualizar o status do pedido e visualizar o histórico de pedidos.
-- **Relatórios**: Gerar relatórios sobre o status do inventário, vendas e outras métricas relevantes.
+- Cadastro e gerenciamento de produtos
+- Controle de estoque
+- Registro de pedidos
+- Gerenciamento de clientes
 
-## Instalação
-1. Clone o repositório:
-    ```
-    git clone https://github.com/victorfaccioli/MRP_SHOES.git
-    ```
-2. Configure o MySQL e importe o banco de dados fornecido no diretório `database`.
-3. Certifique-se de que o driver JDBC do MySQL está incluído no projeto.
-4. Navegue até o diretório do projeto:
-    ```
-    cd MRP_SHOES
-    ```
-5. Compile os arquivos Java:
-    ```
-    javac *.java
-    ```
-
-## Utilização
-1. Execute a classe Main:
-    ```
-    java Main
-    ```
-2. Navegue pelo menu para acessar diferentes funcionalidades, como gestão de produtos, gestão de pedidos e relatórios.
-
-## Contribuições
-Contribuições são bem-vindas! Se você tiver ideias para novas funcionalidades, melhorias ou encontrar algum problema, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+## Contribuição
+Sinta-se à vontade para abrir issues ou enviar pull requests.
 
 ## Licença
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
+Este projeto está licenciado sob a [MIT License](LICENSE).
 
-## Reconhecimentos
-Agradecimentos especiais a [Victor Faccioli](https://github.com/victorfaccioli) por criar a base deste projeto.
